@@ -17,7 +17,6 @@ pipeline {
                 sh './org.sh
                 //echo 'Done'
             }
-        }                  
-                    
+        }                            
     }
 }
