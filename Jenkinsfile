@@ -13,8 +13,10 @@ pipeline {
                 azureKeyVault(credentialID: 'AzureSP', keyVaultURL: 'https://jenkinstf.vault.azure.net/', secrets: [[envVariable: 'Token', name: 'TFAPITOKENAD', secretType: 'Secret']])
             }
             steps {
+                echo 'started'
                 sh 'chmod +x ./org.sh'
                 sh './org.sh
+                echo 'Done'
             }
         }                  
                     
