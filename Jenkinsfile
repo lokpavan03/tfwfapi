@@ -14,7 +14,7 @@ pipeline {
             }
             steps {
                 sh 'chmod +x ./org.sh'
-                sh './org.sh
+                sh './org.sh'
                 //echo 'Done'
             }
         }                            
